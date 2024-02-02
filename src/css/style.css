@@ -38,7 +38,7 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -91,9 +91,47 @@ h6 {
 }
 
 /*--------------------*/
+section button {
+  background-color: transparent;
+}
+
+footer {
+  color: greenyellow;
+}
+
 body {
   font-family: "Roboto";
-  background-color: rgb(212, 146, 146);
+}
+
+.stores {
+  padding: 50px 40px;
+}
+.stores h1 {
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+@media (min-width: 789px) {
+  .stores .stores__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.stores li {
+  padding: 30px 5px;
+  line-height: 1.5rem;
+}
+.stores h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.stores .stores__city {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.stores .stores__name {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

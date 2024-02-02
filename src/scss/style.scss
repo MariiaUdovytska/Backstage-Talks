@@ -1,7 +1,39 @@
-@import "nullstyle.scss";
+@import "nullstyle";
+@import "main";
+@import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 body {
 	font-family: "Roboto";
-	background-color: rgb(212, 146, 146);
+}
+.stores {
+	padding: 50px 40px;
+
+	h1 {
+		padding-bottom: 20px;
+		font-size: 1.8rem;
+		font-weight: 800;
+	}
+	.stores__body {
+		@media (min-width: 789px) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	li {
+		padding: 30px 5px;
+		line-height: 1.5rem;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 1.3rem;
+	}
+	.stores__city {
+		font-weight: 500;
+		margin-top: 10px;
+	}
+	.stores__name {
+		text-decoration: underline;
+	}
 }
