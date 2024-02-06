@@ -6,6 +6,51 @@
 body {
 	font-family: "Roboto";
 }
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 789px) {
+		position: relative;
+	}
+}
+
+header {
+	a {
+		margin-left: 20px;
+	}
+	img {
+		width: 160px;
+		@media (min-width: 789px) {
+			width: 260px;
+		}
+	}
+	span {
+		display: none;
+	}
+}
+@media (min-width: 995px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		span {
+			display: inline;
+			font-weight: 700;
+			margin-right: 20px;
+		}
+	}
+}
+
+main {
+	flex: 1 1 auto;
+}
+
 .stores {
 	padding: 50px 40px;
 
