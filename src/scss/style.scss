@@ -5,6 +5,7 @@
 
 body {
 	font-family: "Roboto";
+	transition: background 1s ease-in-out;
 }
 
 a {
@@ -21,9 +22,7 @@ a {
 }
 
 header {
-	a {
-		margin-left: 20px;
-	}
+	padding: 15px 20px;
 	img {
 		width: 160px;
 		@media (min-width: 789px) {
@@ -42,13 +41,13 @@ header {
 		span {
 			display: inline;
 			font-weight: 700;
-			margin-right: 20px;
 		}
 	}
 }
 
 main {
 	flex: 1 1 auto;
+	margin-top: -15px;
 }
 
 .stores {

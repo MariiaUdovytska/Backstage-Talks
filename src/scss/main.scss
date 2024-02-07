@@ -1,6 +1,27 @@
-section button {
-	background-color: transparent;
-}
 section {
 	text-align: center;
+	h2 {
+		font-weight: 700;
+	}
+	h2,
+	p {
+		margin-bottom: 15px;
+	}
+	button {
+		font-size: 1rem;
+		display: inline-block;
+		background-color: transparent;
+	}
+	.dialogues {
+		width: 100%;
+		height: 100vh;
+	}
+	.dialogues__stores {
+		a {
+			color: white;
+		}
+	}
+	&[data-bg="white"] .dialogues__stores a {
+		color: pink;
+	}
 }
