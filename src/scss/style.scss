@@ -13,28 +13,36 @@ a {
 	color: unset;
 }
 .wrapper {
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	@media (min-width: 789px) {
 		position: relative;
 	}
 }
+@media (min-width: 995px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
 
 header {
-	padding: 15px 20px;
+	padding: 15px 0px;
 	img {
 		width: 160px;
+		margin-left: 20px;
 		@media (min-width: 789px) {
 			width: 260px;
 		}
 	}
 	span {
+		margin-right: 20px;
 		display: none;
 	}
 }
 @media (min-width: 995px) {
 	header {
+		position: fixed;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -47,7 +55,6 @@ header {
 
 main {
 	flex: 1 1 auto;
-	margin-top: -15px;
 }
 
 .stores {

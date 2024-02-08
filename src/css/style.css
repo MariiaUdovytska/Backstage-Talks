@@ -92,6 +92,7 @@ h6 {
 
 /*--------------------*/
 section {
+  height: 100vh;
   text-align: center;
 }
 section h2 {
@@ -114,7 +115,7 @@ section .dialogues__stores a {
   color: white;
 }
 section[data-bg=white] .dialogues__stores a {
-  color: pink;
+  color: #ff608c;
 }
 
 .footer {
@@ -148,7 +149,7 @@ section[data-bg=white] .dialogues__stores a {
 
 @media (min-width: 995px) {
   footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
   }
@@ -183,7 +184,6 @@ a {
 }
 
 .wrapper {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -193,11 +193,17 @@ a {
   }
 }
 
+@media (min-width: 995px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
 header {
-  padding: 15px 20px;
+  padding: 15px 0px;
 }
 header img {
   width: 160px;
+  margin-left: 20px;
 }
 @media (min-width: 789px) {
   header img {
@@ -205,11 +211,14 @@ header img {
   }
 }
 header span {
+  margin-right: 20px;
   display: none;
 }
 
 @media (min-width: 995px) {
   header {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -221,7 +230,6 @@ header span {
 }
 main {
   flex: 1 1 auto;
-  margin-top: -15px;
 }
 
 .stores {

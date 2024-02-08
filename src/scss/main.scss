@@ -1,4 +1,5 @@
 section {
+	height: 100vh;
 	text-align: center;
 	h2 {
 		font-weight: 700;
@@ -22,6 +23,6 @@ section {
 		}
 	}
 	&[data-bg="white"] .dialogues__stores a {
-		color: pink;
+		color: #ff608c;
 	}
 }
