@@ -2,6 +2,16 @@
 @import "main";
 @import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+%header-position {
+	padding: 15px 0px;
+	img {
+		width: 160px;
+		margin-left: 20px;
+		@media (min-width: 789px) {
+			width: 260px;
+		}
+	}
+}
 
 body {
 	font-family: "Roboto";
@@ -25,22 +35,15 @@ a {
 	}
 }
 
-header {
-	padding: 15px 0px;
-	img {
-		width: 160px;
-		margin-left: 20px;
-		@media (min-width: 789px) {
-			width: 260px;
-		}
-	}
+.header-main {
+	@extend %header-position;
 	span {
 		margin-right: 20px;
 		display: none;
 	}
 }
 @media (min-width: 995px) {
-	header {
+	.header-main {
 		position: fixed;
 		width: 100%;
 		display: flex;
@@ -52,13 +55,16 @@ header {
 		}
 	}
 }
+.header-extra {
+	@extend %header-position;
+}
 
 main {
 	flex: 1 1 auto;
 }
 
 .stores {
-	padding: 50px 40px;
+	padding: 70px 40px;
 
 	h1 {
 		padding-bottom: 20px;
@@ -85,6 +91,39 @@ main {
 		margin-top: 10px;
 	}
 	.stores__name {
+		text-decoration: underline;
+	}
+}
+
+.privacy {
+	padding: 70px 40px;
+	font-size: 0.72rem;
+	max-width: 940px;
+	line-height: 1.1rem;
+	h1 {
+		padding-bottom: 20px;
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+	p {
+		margin: 13px 0px;
+	}
+	h2 {
+		margin: 30px 0px 15px 0px;
+		font-size: 0.85rem;
+		font-weight: 700;
+	}
+	ul {
+		padding-left: 40px;
+		li {
+			list-style: disc;
+			font-size: 0.77rem;
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	p a {
 		text-decoration: underline;
 	}
 }
