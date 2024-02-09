@@ -1,0 +1,39 @@
+$header-height-mobile: 48px;
+
+section {
+	height: calc(100vh - #{$header-height-mobile});
+	text-align: center;
+	img {
+		max-width: 420px;
+	}
+	h2 {
+		font-weight: 700;
+	}
+	h2,
+	p {
+		margin-bottom: 15px;
+	}
+	button {
+		font-size: 1rem;
+		display: inline-block;
+		background-color: transparent;
+	}
+	.dialogues__stores {
+		a {
+			color: white;
+		}
+	}
+	&[data-bg="white"] .dialogues__stores a {
+		color: #ff608c;
+	}
+}
+@media (min-width: 995px) {
+	section {
+		height: 100vh;
+	}
+	.dialogues__body {
+		position: relative;
+		display: inline-block;
+		z-index: 5;
+	}
+}
