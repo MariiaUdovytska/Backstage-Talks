@@ -52,6 +52,11 @@ $font-weight: 700;
 		align-self: end;
 		ul {
 			display: block;
+			li {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 		span {
 			display: none;

@@ -178,6 +178,9 @@ section[data-bg=white] .dialogues__stores a {
   .footer__navigate ul {
     display: block;
   }
+  .footer__navigate ul li:hover {
+    text-decoration: underline;
+  }
   .footer__navigate span {
     display: none;
   }

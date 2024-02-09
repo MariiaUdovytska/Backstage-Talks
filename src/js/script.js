@@ -17,13 +17,17 @@ function onScroll() {
 		document.body.style.background = dialogues.el.getAttribute('data-bg');
 }
 
-document.addEventListener("click", function (e) {
-	var target = e.target;
+document.addEventListener("click", function (event) {
+	let target = event.target;
 
 	if (target.tagName === "A" && target.hasAttribute("href") && target.hasAttribute("nav-dialogue")) {
-		e.preventDefault();
-
-		var id = target.getAttribute("href"),
+		event.preventDefault();
+		let issues = document.querySelectorAll('[nav-dialogue]');
+		for (let i = 0; i < issues.length; i++) {
+			issues[i].style.fontWeight = 'normal';
+		}
+		target.style.fontWeight = 'bold';
+		let id = target.getAttribute("href"),
 			destination = document.querySelector(id);
 
 		if (destination) {
